@@ -1,0 +1,9 @@
+library (deSolve)
+
+init <- c(Y1=0, Y2=0)
+timegrid <- seq(0,20*pi,0.1)
+
+myfn <- function(t state, parms){ 
+with (as.list(c(state,parms,t)),{
+
+dY1 <- 
